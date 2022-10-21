@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
 }
 
 ul {
@@ -32,6 +33,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 30px 20px;
+  position: fixed;
+  width: 100vw;
+  box-sizing: border-box;
+  top: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -47,9 +53,7 @@ nav button {
 
 header {
   background-color: #540b51;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 80px;
 }
 
 .header-title {
@@ -220,6 +224,7 @@ main .text p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 50px;
 }
 
 #teams-section h3 {
@@ -299,4 +304,91 @@ main button {
 #welcome-section h3 {
   color: white;
   text-align: center;
+}
+
+.cool-bottom-container {
+  background-color: white;
+  position: relative;
+  height: 50px;
+}
+
+.cool-bottom {
+  background-color: #540b51;
+  height: 50px;
+  width: 100%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  position: absolute;
+  top: -25px;
+}
+
+footer {
+  padding: 20px;
+}
+
+footer .slack-logo-small {
+  width: 45px;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-top: 15px;
+  font-size: 12px;
+  color: rgb(92, 92, 92);
+}
+
+.footer-links .title {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 14px;
+  color: black;
+  height: 35px;
+}
+
+.footer-links ul {
+  width: 23%;
+}
+
+hr {
+  color: rgb(92, 92, 92);
+  border-radius: 2px;
+}
+
+.footer-info li {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-info .region,
+.download {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-info .download {
+  color: #4285f4;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 40px 0;
+}
+
+small {
+  font-size: 10px;
 }
