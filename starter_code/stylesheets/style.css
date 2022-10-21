@@ -8,3 +8,295 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* NAV */
+
+nav ul {
+  display: none;
+}
+
+nav {
+  background-color: #540b51;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+}
+
+/* HEADER */
+
+header {
+  background-color: #540b51;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  margin-bottom: 50px;
+  width: 95%;
+  padding: 0 10px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+header p {
+  text-align: center;
+  color: white;
+}
+
+.yellow-text {
+  color: #ecb12f;
+}
+
+.signup-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.signup-buttons button {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 50px;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+}
+
+.signup-button-email {
+  background-color: white;
+  color: #540b51;
+}
+
+.signup-button-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #4285f4;
+  position: relative;
+}
+
+.signup-button-google img {
+  background-color: white;
+  border-radius: 3px;
+  width: 26px;
+  padding: 5px;
+  position: absolute;
+  left: 7px;
+}
+
+.hero img {
+  width: 145%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+
+main {
+  background-color: #f3eae2;
+}
+
+#companies-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#companies-section p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #191817;
+}
+
+.companies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.companies img {
+  object-fit: contain;
+  margin: 10px 5px;
+}
+
+#companies-section p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.companies .small-company {
+  width: 15%;
+}
+
+.companies .normal-company {
+  width: 25%;
+}
+
+.companies .big-company {
+  width: 60%;
+}
+
+main img {
+  margin-top: 20px;
+  width: 90vw;
+  object-fit: cover;
+}
+
+main .text {
+  padding: 10px;
+  margin: 20px 0;
+}
+
+main h2,
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #191817;
+}
+
+main .text a {
+  text-decoration: none;
+  color: #2e71a6;
+}
+
+main .text a::after {
+  content: " →";
+}
+
+main .text p {
+  line-height: 25px;
+}
+
+#flexibility-section {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flex {
+  display: flex;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+#teams-section {
+  background-color: white;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#teams-section h3 {
+  text-align: center;
+  margin: 10px 0 5px 0;
+  width: 90%;
+}
+
+#teams-section p {
+  text-align: center;
+}
+
+.div-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+main button {
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #540b51;
+}
+
+.filled {
+  background-color: #540b51;
+  color: white;
+  border: 1px solid white;
+}
+
+.outline {
+  background-color: white;
+  color: #540b51;
+}
+
+#teams-section ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#teams-section li {
+  width: 40%;
+}
+
+#teams-section span {
+  font-size: 50px;
+  font-weight: bold;
+  color: #540b51;
+}
+
+#teams-section ul p {
+  font-weight: bold;
+}
+
+#teams-section ul p:after {
+  content: "*";
+}
+
+.extra-info {
+  font-size: 14px;
+  color: rgb(174, 174, 174);
+  margin-bottom: 20px;
+}
+
+#welcome-section {
+  background-color: #540b51;
+  padding: 20px;
+}
+
+#welcome-section h3 {
+  color: white;
+  text-align: center;
+}
