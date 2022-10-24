@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  width: 100vw;
+  max-width: 100vw;
 }
 
 ul {
@@ -53,13 +53,15 @@ nav button {
 
 header {
   background-color: #540b51;
-  padding-top: 80px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-title {
   margin-bottom: 50px;
-  width: 95%;
   padding: 0 10px;
+  box-sizing: border-box;
 }
 
 header h1 {
@@ -116,8 +118,8 @@ header p {
 }
 
 .hero img {
-  width: 145%;
-  height: 300px;
+  width: 100%;
+  height: 150px;
   object-fit: cover;
   object-position: 0% 0%;
 }
@@ -127,16 +129,15 @@ main {
 }
 
 #companies-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
+  background-color: #f3eae2;
 }
 
 #companies-section p {
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
+  font-size: 14px;
   color: #191817;
 }
 
@@ -145,25 +146,19 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
 .companies img {
   object-fit: contain;
-  margin: 10px 5px;
+  margin: 10px 0;
+  height: 40px;
 }
-
-#companies-section p {
-  text-align: center;
-  font-size: 14px;
-}
-
 .companies .small-company {
-  width: 15%;
+  width: 20%;
 }
 
 .companies .normal-company {
-  width: 25%;
+  width: 30%;
 }
 
 .companies .big-company {
@@ -174,6 +169,14 @@ main img {
   margin-top: 20px;
   width: 90vw;
   object-fit: cover;
+}
+
+.mobile-img {
+  display: block;
+}
+
+.desktop-img {
+  display: none;
 }
 
 main .text {
@@ -296,30 +299,21 @@ main button {
   margin-bottom: 20px;
 }
 
-#welcome-section {
+.bg-welcome-section {
   background-color: #540b51;
   padding: 20px;
+  padding-bottom: 70px;
+  clip-path: ellipse(105% 100% at center top);
+}
+
+#welcome-section {
+  background-color: white;
+  margin-bottom: 20px;
 }
 
 #welcome-section h3 {
   color: white;
   text-align: center;
-}
-
-.cool-bottom-container {
-  background-color: white;
-  position: relative;
-  height: 50px;
-}
-
-.cool-bottom {
-  background-color: #540b51;
-  height: 50px;
-  width: 100%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  position: absolute;
-  top: -25px;
 }
 
 footer {
@@ -391,4 +385,106 @@ hr {
 
 small {
   font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  header {
+    background-image: url(../images/background-singup.png);
+    background-size: cover;
+    margin-top: 80px;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: left;
+    width: 75%;
+  }
+
+  header p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .header-title {
+    width: 95%;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .companies {
+    max-width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .companies .small-company {
+    width: 12%;
+  }
+
+  .companies .normal-company {
+    width: 16%;
+  }
+
+  .companies .big-company {
+    width: 24%;
+    margin-right: 20px;
+  }
+
+  main img {
+    width: 80%;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+  }
+
+  main .text {
+    width: 60%;
+    margin: 20px auto;
+  }
+
+  #teams-section .div-buttons {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  #teams-section ul {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 90%;
+  }
+
+  #teams-section ul p {
+    text-align: left;
+  }
+
+  .bg-welcome-section {
+    padding: 20px 10% 70px 10%;
+  }
+
+  .footer-info {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+  }
+
+  .social-networks {
+    justify-content: flex-start;
+    gap: 30px;
+  }
 }
