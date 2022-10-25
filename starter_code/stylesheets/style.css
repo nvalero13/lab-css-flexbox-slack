@@ -152,7 +152,14 @@ main {
   object-fit: contain;
   margin: 10px 0;
   height: 40px;
+  transition: 200ms;
 }
+
+.companies img:hover {
+  transform: scale(1.1);
+  transition: 200ms;
+}
+
 .companies .small-company {
   width: 20%;
 }
@@ -196,8 +203,17 @@ main .text a {
   color: #2e71a6;
 }
 
-main .text a::after {
+main .text a:after {
   content: " →";
+  display: inline-block;
+  transition: 300ms;
+}
+
+main .text a:hover:after {
+  content: "  →";
+  display: inline-block;
+  transform: translateX(10px);
+  transition: 300ms;
 }
 
 main .text p {
@@ -516,11 +532,19 @@ small {
     color: white;
   }
 
+  nav div a:hover {
+    transition: 100ms;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+  }
+
   .try-button a {
     padding: 10px;
     border-radius: 5px;
     color: #540b51;
     background-color: white;
+    box-sizing: border-box;
+    transition: 200ms;
   }
 
   .hero img {
@@ -533,6 +557,11 @@ small {
 
   .flex {
     width: 60%;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+    transition: 100ms;
   }
 
   main img {
@@ -561,5 +590,29 @@ small {
     flex-direction: row-reverse;
     justify-content: center;
     gap: 10px;
+  }
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1440px) {
+  header {
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 0;
+  }
+
+  .signup-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .signup-buttons button {
+    padding: 15px 65px;
+  }
+
+  .header-title {
+    width: 40%;
   }
 }
